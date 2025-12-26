@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Health Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="header">
+        <h2>💬 Mental Health Support</h2>
+        <button onclick="toggleDark()">🌙</button>
+    </div>
+
+    <div class="messages">
+        {% for sender, message in chat_history %}
+            {% if sender == "user" %}
+                <div class="user-message">{{ message }}</div>
+            {% else %}
+                <div class="bot-message">{{ message }}</div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <form method="POST" class="input-area">
+        <input type="text" name="message" placeholder="Type how you feel..." required>
+        <button type="submit">➤</button>
+    </form>
+</div>
+
+<script>
+function toggleDark() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
