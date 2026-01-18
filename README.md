@@ -1,6 +1,6 @@
 # Mental Health Support Chatbot 💬
 
-A web-based mental health support chatbot built using Flask, HTML, and CSS.  
+A web-based mental health support chatbot built using Flask, HTML, and CSS
 The application is designed with ethical mental-health principles, offering supportive, non-judgmental conversations, crisis keyword detection, and a calm chat-based user interface.
 
 The chatbot works with or without an AI API key. When AI services are unavailable, it gracefully falls back to emotion-aware, rule-based responses to ensure reliability and safety.
